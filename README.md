@@ -1,6 +1,6 @@
-# Airbnb Clone Project 🏡
+Airbnb Clone Project 
 
-## 🚀 Project Overview
+##  Project Overview
 
 The **Airbnb Clone Project** is a full-stack simulation of the Airbnb platform. This backend project focuses on building the core logic, APIs, and database design needed to support a real-world property booking system.
 
@@ -8,7 +8,7 @@ The system will support user registration, property listings, booking functional
 
 ---
 
-## 🎯 Project Goals
+##  Project Goals
 
 - Build secure and scalable backend architecture
 - Enable user and host registration, authentication, and profile management
@@ -20,7 +20,7 @@ The system will support user registration, property listings, booking functional
 
 ---
 
-## ⚙️ Technology Stack
+##  Technology Stack
 
 - **Backend Framework:** Django, Django REST Framework (DRF)
 - **Database:** MySQL
@@ -32,7 +32,7 @@ The system will support user registration, property listings, booking functional
 
 ---
 
-## 🧑‍💻 Author
+##  Author
 
 Chioma Ezeh  
 
@@ -44,11 +44,11 @@ Front-end developers create the part of an application that users interact with,
 Back-end developers, in turn, implement the core of an app—its algorithms and business logic. Experienced back-end developers not only write code but also do the tasks of an architect—for example, devise an app architecture or design and implement the necessary integrations.
 In general, they are Responsible for designing and building API endpoints, managing server-side logic, creating database models, and ensuring secure and efficient data handling. They implement the core functionality of the application using Django and Django REST Framework.
 
-### 🛢️ Database Administrator (DBA)
+###  Database Administrator (DBA)
 Manages the structure and health of the MySQL database. They handle data modeling, indexing, optimization, and ensure secure data storage and retrieval.
 
 
-### ✅ QA Engineer
+###  QA Engineer
 The job of a quality assurance engineer is to verify whether an application meets the requirements—both functional and non-functional. Functional requirements define what an application should do, while non-functional requirements specify how it should do that. To verify both, QA specialists run various checks, followed by analyzing the test results and reporting on the application quality.
 
 They evaluate an application from different angles—be it functionality, usability, security, or performance (hence, many types of testing)
@@ -57,13 +57,13 @@ They Makes sure an application performs according to requirements
 Spots functional and non-functional defects.
 
 
-### 📅 Project Manager
+###  Project Manager
 In sequential models, a project manager is responsible for distributing tasks across team members, planning work activities, and updating project status.
 
 In Agile projects where the focus is on self-management, transparency, and shared ownership, a PM sets up the vision of a product, maintains transparency, fosters communication, searches for improvements in the development process, and makes sure a team delivers more value with each iteration.
 
 
-### 📅 DevOps engineer
+###  DevOps engineer
 Even in Agile environments, development and operations teams can be siloed. DevOps engineers serve as a link between the two teams, unifying and automating the software delivery process and helping strike a balance between introducing changes quickly and keeping an application stable. Working together with software developers, system administrators, and operational staff, DevOps engineers oversee and facilitate code releases on a CI/CD basis.
 
 
@@ -103,7 +103,7 @@ Tools used to test your API endpoints during development. They help verify that 
 Database Design
 The database for the Airbnb Clone project follows a relational design. It includes core entities that represent users, properties, bookings, reviews, and payments. These entities are connected to reflect how real-world booking platforms work.
 
-### 🧑‍💼 Users
+###  Users
 Represents all users including guests and hosts.
 
 **Important Fields:**
@@ -114,7 +114,7 @@ Represents all users including guests and hosts.
 - `is_host` (Boolean to identify hosts)
 
 
-### 🏠 Properties
+###  Properties
 Represents properties listed by hosts.
 
 **Important Fields:**
@@ -126,7 +126,7 @@ Represents properties listed by hosts.
 - `owner_id` (Foreign Key to Users)
 
 
-### 📆 Bookings
+###  Bookings
 Represents the reservation details made by users.
 
 **Important Fields:**
@@ -138,7 +138,7 @@ Represents the reservation details made by users.
 - `status` (e.g., pending, confirmed, canceled)
 
 
-### 💳 Payments
+###  Payments
 Stores payment transaction data for bookings.
 
 **Important Fields:**
@@ -149,7 +149,7 @@ Stores payment transaction data for bookings.
 - `payment_status`
 
 
-### ✍️ Reviews
+###  Reviews
 Represents feedback given by users for properties.
 
 **Important Fields:**
@@ -222,7 +222,7 @@ In production environments, all API communications will be served over HTTPS to 
 
 ---
 
-### 🛡️ Why Security Matters
+###  Why Security Matters
 
 - **User Data Protection**: Ensures personal data like emails, passwords, and profiles remain private and secure.
 - **Platform Integrity**: Prevents unauthorized actions that could corrupt or disrupt the system (e.g., fake bookings, property spam).
@@ -230,5 +230,25 @@ In production environments, all API communications will be served over HTTPS to 
 - **Legal Compliance**: Helps meet data protection laws like GDPR by securing user information.
 
 
+CI/CD Pipeline
+CI/CD stands for **Continuous Integration** and **Continuous Deployment/Delivery**. It is a set of practices that automatically test, build, and deploy your application whenever code is pushed to your repository. This ensures that new changes do not break existing features and that updates can be delivered to users quickly and reliably.
+
+###  Why CI/CD is Important
+
+- **Improves Code Quality**: Automatically runs tests to catch bugs before deployment.
+- **Saves Time**: Reduces the need for manual testing and deployment.
+- **Enhances Collaboration**: Ensures every team member’s code is tested and integrated properly.
+- **Supports Agile Development**: Enables frequent updates with minimal downtime or risk.
+
+
+###  Tools Used in This Project
+
+- **GitHub Actions**: Automates testing and deployment when code is pushed to the repository.
+- **Docker**: Ensures that the app runs in the same environment on all machines by using containers.
+- **Docker Compose** *(optional)*: Manages multi-container Docker applications for local testing and deployment.
+- **pytest/unittest**: Runs automated tests before deployment to ensure code reliability.
+- **Heroku / Render / AWS / DigitalOcean** *(Optional deployment platforms)*: Hosts the live backend API with automatic deployments triggered by CI/CD tools.
+
+This pipeline helps ensure that the Airbnb Clone backend is always reliable, tested, and production-ready.
 
 
