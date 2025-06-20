@@ -100,8 +100,7 @@ Tools used to test your API endpoints during development. They help verify that 
 
 
 
-  CREATE A DTABASE DESIGN
-
+Database Design
 The database for the Airbnb Clone project follows a relational design. It includes core entities that represent users, properties, bookings, reviews, and payments. These entities are connected to reflect how real-world booking platforms work.
 
 ### 🧑‍💼 Users
