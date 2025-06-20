@@ -199,5 +199,36 @@ Automates code testing and deployment using tools like GitHub Actions. This impr
 Uses techniques like indexing and caching (with Redis) to speed up data retrieval and reduce database load. This keeps the application fast and responsive under heavy usage.
 
 
+API Security
+Securing the backend API is critical for protecting user information, financial transactions, and platform integrity. Below are the key security measures implemented in this project:
+
+###  Authentication
+We will implement secure user authentication using token-based systems like JWT (JSON Web Tokens). This ensures that only registered and verified users can access protected routes, like booking a property or updating account details.
+
+###  Authorization
+Authorization checks ensure that users can only access resources they own or are permitted to use. For example, a user should not be able to delete another user's booking or property listing.
+
+###  Rate Limiting
+Rate limiting helps prevent abuse by limiting the number of requests a user can make in a given time period. This protects the API from denial-of-service (DoS) attacks and excessive usage from bots.
+
+###  Input Validation & Sanitization
+All incoming data will be validated and sanitized to prevent injection attacks such as SQL Injection and Cross-Site Scripting (XSS). This keeps the application and its data safe from malicious input.
+
+###  Secure Payment Handling
+Payment information will be handled through secure, PCI-compliant third-party providers. Sensitive data like credit card numbers will not be stored directly in our database to reduce the risk of breaches.
+
+###  HTTPS and SSL
+In production environments, all API communications will be served over HTTPS to encrypt data in transit and protect it from being intercepted.
+
+---
+
+### 🛡️ Why Security Matters
+
+- **User Data Protection**: Ensures personal data like emails, passwords, and profiles remain private and secure.
+- **Platform Integrity**: Prevents unauthorized actions that could corrupt or disrupt the system (e.g., fake bookings, property spam).
+- **Payment Security**: Protects sensitive financial data and builds trust with users.
+- **Legal Compliance**: Helps meet data protection laws like GDPR by securing user information.
+
+
 
 
